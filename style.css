@@ -2,6 +2,7 @@ body,html {
     max-width: 100%;
     background-color:transparent;
     font-family:-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue","Segoe UI","ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
+    color: white;
 }
 
 .section b, .about b {
