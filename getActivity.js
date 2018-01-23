@@ -8,7 +8,7 @@ fetch("https://"+domain+"/api/v1/instance/activity", {
         throw new Error();
     }
 }).then(function(json) {
-    document.getElementById("domain").innerText = domain + "の";
+    document.getElementById("domain").innerText = domain;
     document.getElementById("toot").innerText = json[0]["statuses"];
     document.getElementById("login").innerText = json[0]["logins"];
     document.getElementById("new").innerText = json[0]["registrations"];
