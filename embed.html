@@ -3,12 +3,12 @@
     <meta charset=utf-8>
     <meta content=width=device-width,initial-scale=1 name=viewport>
     <title>Mastodon Activity Embed</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?2018-01-25">
 </head>
 <body>
 <div id="ok">
     <div class="about">
-        <b>今週の統計</b>
+        <b>週統計</b> <small id="week"></small><br>
         <small id="domain"></small>
     </div>
     <div class="container">
@@ -34,6 +34,6 @@
 <div id="ng" class="invisible">
     <b>Error: アクティビティを取得できませんでした。公開されていないかMastodonのバージョンが古い可能性があります。</b>
 </div>
-<script src="getActivity.js"></script>
+<script src="getActivity.js?2018-01-25"></script>
 </body>
 </html>
