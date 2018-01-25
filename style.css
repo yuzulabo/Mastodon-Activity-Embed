@@ -5,6 +5,10 @@ body,html {
     color: white;
 }
 
+.section {
+    text-align: right;
+}
+
 .section b, .about b {
     font-weight: 500;
     font-size: 32px;
