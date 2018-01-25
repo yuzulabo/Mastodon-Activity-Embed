@@ -1,9 +1,9 @@
 # Mastodon-Activity-Embed
-![8142335a51a889fe1b2330769ab8ea3b](https://user-images.githubusercontent.com/14953122/35280312-241f63a4-0093-11e8-8ac5-552b542930e2.png)  
+![a59e51510328ffb3752141b6f1130ddb](https://user-images.githubusercontent.com/14953122/35373826-a17a5a60-01e3-11e8-87ba-d594756b1002.png)   
 統計情報を /about/more に表示するやつです。
 
 ## 使い方
 - **Mastodon v2.1.2以上で、/api/v1/instance/activityが有効化されている必要があります。**
 
 `<iframe src="https://yuzulabo.github.io/Mastodon-Activity-Embed/embed.html?(あなたのインスタンスのドメイン)" style="width: 100%;height: 190px;" frameborder="0" scrolling="no"></iframe>` をサイト設定 → カスタム詳細説明に貼り付けてください。   
-![fa796819bfb24fa03c75ad425fbd63a8](https://user-images.githubusercontent.com/14953122/35280408-7a87e4a0-0093-11e8-82df-113d716ba7b9.png)
+![432a4a1060c1fd42de863c01e89e0a2f](https://user-images.githubusercontent.com/14953122/35374007-69183614-01e4-11e8-8bad-3c91d88d7364.png)
