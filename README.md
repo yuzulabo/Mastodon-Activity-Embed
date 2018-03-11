@@ -7,3 +7,5 @@
 
 `<iframe src="https://yuzulabo.github.io/Mastodon-Activity-Embed/embed.html?(あなたのインスタンスのドメイン)" style="width: 100%;height: 190px;" frameborder="0" scrolling="no"></iframe>` をサイト設定 → カスタム詳細説明に貼り付けてください。   
 ![432a4a1060c1fd42de863c01e89e0a2f](https://user-images.githubusercontent.com/14953122/35374007-69183614-01e4-11e8-8bad-3c91d88d7364.png)
+
+または、あなたが管理するサーバーにダウンロードして使用する事もできます。
