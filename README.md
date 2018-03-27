@@ -1,6 +1,6 @@
 # Mastodon-Activity-Embed
 ![a59e51510328ffb3752141b6f1130ddb](https://user-images.githubusercontent.com/14953122/35373826-a17a5a60-01e3-11e8-87ba-d594756b1002.png)   
-統計情報を /about/more に表示するやつです。
+詳細な統計情報を簡単に表示するやつです。
 
 ## 使い方
 - **Mastodon v2.1.2以上で、/api/v1/instance/activityが有効化されている必要があります。**
