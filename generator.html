@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset=utf-8>
+    <meta content=width=device-width,initial-scale=1 name=viewport>
+    <title>Embed Generator - Mastodon Activity Embed</title>
+</head>
+<body>
+    <h2>Embed Generator - Mastodon Activity Embed</h2>
+    <p>
+        Source code: <a href="https://github.com/yuzulabo/Mastodon-Activity-Embed">yuzulabo/Mastodon-Activity-Embed</a>
+    </p>
+    <p>
+        Your instance domain<br>
+        <input id="domain" value="knzk.me" style="width: 50%">
+    </p>
+    <p>
+        One theme per line (<b>Theme name:color code without '#'</b>)<br>
+        <textarea id="base" style="width: 50%" rows="20">mastodon-light:000000</textarea>
+    </p>
+    <p>
+        <button onclick="generate()">Generate!</button>
+    </p>
+    <p>
+        Embed code:<br>
+        <textarea id="result" style="width: 50%" rows="20" readonly></textarea>
+    </p>
+    <script>
+        document.getElementById("base").value = "mastodon-light:000000\ntest:123456\n";
+        function generate() {
+            const base_arr = document.getElementById("base").value.split(/\r\n|\r|\n/);
+            var i = 0, result = "";
+            while (base_arr[i]) {
+                var data = base_arr[i].split(':');
+                result += "t.match(/" + data[0] + "/i)?'" + data[1] + "':";
+                i++;
+            }
+            const js = "var t = document.querySelectorAll('link[rel=stylesheet]')[1].href;document.getElementById('mae-frame').src+='&'+(" + result + "'fff')";
+            document.getElementById("result").value = '<iframe src="https://yuzulabo.github.io/Mastodon-Activity-Embed/embed.html?' +
+                document.getElementById("domain").value +
+                '" style="width: 100%;height: 190px;" frameborder="0" scrolling="no" id="mae-frame"></iframe>\n' +
+                '<script>' + js + '<\/script>';
+        }
+        generate();
+    </script>
+</body>
+</html>
